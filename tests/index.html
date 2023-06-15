@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../src/multiple.css">
+</head>
+<body>
+    
+
+    <h1>Multiple Table</h1>
+
+    <table id="multiple"></table>
+    <button id="reset">Reset</button>
+
+
+    <script type="module">
+
+        import {MultiplicationTable} from '../src/multiple.js';
+
+        let t = new MultiplicationTable(document.getElementById('multiple'));
+
+        
+        document.getElementById('reset').addEventListener('click', function (e){
+            e.preventDefault();
+            t.ResetTable();
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+td{
+    padding: 2px 0px 2px 0px;
+    text-align: center;
+}
+
+input{
+    width: 40px;
+    height: 30px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.correct{
+    background-color: lightgreen;
+}
+
+.incorrect{
+    background-color: lightcoral;
+}
