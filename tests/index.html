@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="../src/multiple.css">
+    <link rel="stylesheet" href="../src/JSMultiplicationTable.css">
 </head>
 <body>
     
@@ -18,14 +18,14 @@
 
     <script type="module">
 
-        import {MultiplicationTable} from '../src/multiple.js';
+        import {MultiplicationTable} from '../src/JSMultiplicationTable.js';
 
-        let t = new MultiplicationTable(document.getElementById('multiple'));
+        let table = new MultiplicationTable(document.getElementById('multiple'));
 
         
         document.getElementById('reset').addEventListener('click', function (e){
             e.preventDefault();
-            t.ResetTable();
+            table.ResetTable();
         });
 
     </script>
